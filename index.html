@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // document.write("<h1>chapter 21 - 25")
+        //question # 1
+        var firstName = prompt("Enter your first name:");
+        var lastName = prompt("Enter your last name:");
+        var fullName = firstName + " " + lastName;
+        alert("Hello, " + fullName + "!");
+        //question # 2
+        var mobileModel = prompt("Enter your favorite mobile phone model:");
+        var modelLength = mobileModel.length;
+        alert("The length of your input is: " + modelLength);
+        //question # 3
+        var word = "Pakistani";
+        var indexOfN = word.indexOf("n");
+        alert("The index of 'n' in 'Pakistani' is: " + indexOfN);
+        //question # 4
+        var phrase = "Hello World";
+        var lastIndexOfL = phrase.lastIndexOf("l");
+        alert("The last index of 'l' in 'Hello World' is: " + lastIndexOfL);
+        //question # 5
+        var wordPakistani = "Pakistani";
+        var charAtThirdIndex = wordPakistani.charAt(3);
+        alert("The character at the 3rd index in 'Pakistani' is: " + charAtThirdIndex);
+        //question # 6
+        var first = prompt("Enter your first name:");
+        var last = prompt("Enter your last name:");
+        var full = first.concat(" ", last);
+        alert("Hello, " + full + "!");
+
+        // document.write("<h1>chapter 26 - 30")
+
+        //qusetion # 1
+        var num = parseFloat(prompt("Enter a positive integer:"));
+        var roundOff = Math.round(num);
+        var floorValue = Math.floor(num);
+        var ceilValue = Math.ceil(num);
+
+        alert("Number: " + num +
+            "\nRound off value: " + roundOff +
+            "\nFloor value: " + floorValue +
+            "\nCeil value: " + ceilValue);
+        //question # 2
+        var number = parseFloat(prompt("Enter a negative floating point number:"));
+        var roundOf = Math.round(number);
+        var florValue = Math.floor(number);
+        var ceilVale = Math.ceil(number);
+
+        alert("Number: " + number +
+            "\nRound off value: " + roundOf +
+            "\nFloor value: " + florValue +
+            "\nCeil value: " + ceilVale);
+        //question # 3
+        var numb = parseFloat(prompt("Enter a number:"));
+        var absValue = Math.abs(numb);
+
+        alert("The absolute value of " + numb + " is: " + absValue);
+        //question  # 4
+        var diceValue = Math.floor(Math.random() * 6) + 1;
+        alert("The value of the dice is: " + diceValue);
+
+        //question # 5
+        var coinToss = Math.random() < 0.5 ? "Heads" : "Tails";
+        alert("The coin landed on: " + coinToss);
+        //question # 6
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+        alert("Random number between 1 and 100 is: " + randomNumber);
+        //question # 7
+        var weightInput = prompt("Enter your weight:");
+        var weight = parseFloat(weightInput);
+        alert("Your weight is: " + weight + " kgs");
+        //question # 8
+        var secretNumber = Math.floor(Math.random() * 10) + 1;
+        var userGuess = parseInt(prompt("Guess a number between 1 and 10:"));
+
+        if (userGuess === secretNumber) {
+            alert("Congratulations! You guessed the secret number.");
+        } else {
+            alert("Try again! The secret number was: " + secretNumber);
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
